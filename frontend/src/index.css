@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+  background-color: #f0f2f5; /* Màu xám nhạt hiện đại */
+  color: #333;
+}
+
+/* Tùy chỉnh thanh cuộn cho đẹp */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8; 
+}
+
+/* Hiệu ứng hover cho thẻ sản phẩm (Nếu dùng class .product-card) */
+.ant-card-hoverable:hover {
+  transform: translateY(-5px); /* Bay lên nhẹ khi rê chuột */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  transition: all 0.3s ease;
+}
